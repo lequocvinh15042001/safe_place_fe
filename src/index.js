@@ -9,6 +9,8 @@ import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import rootReducer from "./reducers";
 import "./styles/normalize.css";
+import { createRoot } from 'react-dom/client';
+
 
 const enhanced = compose(
   applyMiddleware(thunk),
@@ -16,15 +18,21 @@ const enhanced = compose(
     ? window.__REDUX_DEVTOOLS_EXTENSION__()
     : (f) => f
 );
-const store = createStore(rootReducer, enhanced);
+// const store = createStore(rootReducer, enhanced);
 
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <App />
+//   </Provider>,
+//   document.getElementById("root")
+// );
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<React.StrictMode>
+  <App />
+</React.StrictMode>);
 
 // ReactDOM.render(
 //   <Provider>
