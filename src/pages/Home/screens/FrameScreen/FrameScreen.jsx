@@ -2,7 +2,8 @@ import "./style.css";
 
 import { Component } from "../../components/Component";
 import { ComponentWrapper } from "../../components/ComponentWrapper";
-import { Frame } from "../../components/Frame";
+import { FrameHome } from "../../components/Frame";
+import {Link} from "react-router-dom"
 import React from "react";
 
 export const Home = () => {
@@ -12,8 +13,9 @@ export const Home = () => {
         <div className="overlap">
           <div className="text-wrapper">Speaker&#39;s name</div>
           <div className="text-wrapper-2">Podcast name 01</div>
-          <div className="group-2" />
+          <div className="group-2" /> 
           <div className="group-3">
+            <Link to={"#"}>
             <div className="play">
               <img
                 className="icon"
@@ -21,9 +23,10 @@ export const Home = () => {
                 src="https://generation-sessions.s3.amazonaws.com/00a1d99e487596f2ee1ddca7390232ca/img/icon-5.svg"
               />
             </div>
+            </Link>
             <div className="div-wrapper">
               <div className="overlap-group-3">
-                <div className="text-wrapper-3">15</div>
+                <span className="text-wrapper-3">15</span>
                 <img
                   className="icon-2"
                   alt="Icon"
@@ -104,8 +107,8 @@ export const Home = () => {
               src="https://generation-sessions.s3.amazonaws.com/00a1d99e487596f2ee1ddca7390232ca/img/ooui-next-rtl.svg"
             />
             <div className="text-wrapper-9">Recently Posted</div>
-            <div className="text-wrapper-10">Show all</div>
-            <div className="text-wrapper-11">Show all</div>
+            <a href="#" className="text-wrapper-10">Show all</a>
+            <a href="#" className="text-wrapper-11">Show all</a>
             <Component className="component-1" />
             <Component className="component-instance" />
             <Component className="design-component-instance-node" groupClassName="component-1-instance" />
@@ -201,7 +204,7 @@ export const Home = () => {
             />
             <div className="text-wrapper-22">Vietnam (English)</div>
           </div>
-          <Frame className="frame-instance" />
+          {/* <Frame className="frame-instance" /> */}
           <ComponentWrapper
             clarityLibrary="https://generation-sessions.s3.amazonaws.com/00a1d99e487596f2ee1ddca7390232ca/img/clarity-library-solid.svg"
             className="component-15"

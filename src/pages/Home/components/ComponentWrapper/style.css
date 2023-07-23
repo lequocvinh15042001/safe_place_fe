@@ -59,12 +59,13 @@
     font-family: "Signika", Helvetica;
     font-size: 11px;
     font-weight: 700;
-    left: 33px;
+    left: 15px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     top: 81px;
     width: 110px;
+    text-decoration-line: none;
   }
   
   .component-wrapper .search {
@@ -76,8 +77,9 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 41px;
+    top: 43px;
     width: 43px;
+    text-decoration: none;
   }
   
   .component-wrapper .home {
@@ -85,11 +87,12 @@
     font-family: "Signika", Helvetica;
     font-size: 11px;
     font-weight: 700;
-    left: 38px;
+    left: 35px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 6px;
+    top: 10px;
     width: 43px;
+    text-decoration: none;
   }
   

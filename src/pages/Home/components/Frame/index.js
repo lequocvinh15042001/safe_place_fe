@@ -1,1 +1,1 @@
-export { Frame } from "./Frame";
+export { FrameHome } from "./FrameHome";

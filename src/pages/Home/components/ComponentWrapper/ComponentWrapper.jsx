@@ -34,9 +34,15 @@ export const ComponentWrapper = ({
         <img className="clarity-library" alt="Clarity library" src={clarityLibrary} />
         <img className="material-symbols-add" alt="Material symbols add" src={materialSymbolsAdd} />
         <div className="rectangle" />
-        <div className="my-courses">My courses</div>
-        <div className="search">Search</div>
-        <Link className="home" to={to1}>
+        {/* <div className="my-courses">My courses</div> */}
+        <Link className="my-courses" to={"/courses"}>
+        My courses
+        </Link>
+        <Link className="search" to={"#"}>
+          Search
+        </Link>
+        {/* <div className="search">Search</div> */}
+        <Link className="home" to={"/"}>
           Home
         </Link>
       </div>

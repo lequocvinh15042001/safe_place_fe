@@ -4,10 +4,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Account } from './pages/AccountOverview';
 import {Counselling} from './pages/Counselling';
-import { Courses } from './pages/Courses';
 import {Home} from './pages/Home/screens/FrameScreen';
 import {Login} from './pages/Login/Login';
 import {Signup} from './pages/Signup';
+import { Courses } from './pages/Courses/Courses';
 
 function App() {
   return (
@@ -16,12 +16,11 @@ function App() {
       <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/home" element={<Home />} />
-          
+          <Route path="/" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/account" element={<Account />} />
           <Route path="/counselling" element={<Counselling />} />
-
+          {/* <Route path="/counselling-carlendar" element={<CounsellingRoomCarlendar/>} /> */}
 
           {/* <Route component={NotFound}/> */}
       </Routes>
