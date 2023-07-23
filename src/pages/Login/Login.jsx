@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   return (
@@ -15,9 +16,11 @@ export const Login = () => {
   <a href="#" className="ForgotYourPassword" style={{width: 255, height: 24, left: "57%", top: 577, position: 'absolute', color: '#1F7564', fontSize: 20, fontFamily: 'League Spartan', fontWeight: '700', textDecoration: 'underline', wordWrap: 'break-word'}}>Forgot your password?</a>
 
     {/* Button Login */}
-  <button className="Rectangle2076" style={{border:"none",cursor:"pointer",width: 405, height: 63, left: "49.5%", top: 457, position: 'absolute', background: '#1F7564', borderRadius: 22}}>
-    <span className="LogIn" style={{color: '#FDFDFD', fontSize: 32, fontFamily: 'League Spartan', fontWeight: '700', wordWrap: 'break-word'}}>Log In</span>
-  </button>
+  <Link to={"/"}>
+    <button className="Rectangle2076" style={{border:"none",cursor:"pointer",width: 405, height: 63, left: "49.5%", top: 457, position: 'absolute', background: '#1F7564', borderRadius: 22}}>
+      <span className="LogIn" style={{color: '#FDFDFD', fontSize: 32, fontFamily: 'League Spartan', fontWeight: '700', wordWrap: 'break-word'}}>Log In</span>
+    </button>
+  </Link>
   
   <a href="/signup" className="DonTHaveAcountSignUpForSafeplaceVietnam" style={{width: 420, height: 17, left: "48%", top: 658, position: 'absolute'}}><span style={{color: '#1F7564', fontSize: 16, fontFamily: 'League Spartan', fontWeight: '500', wordWrap: 'break-word'}}>Don’t have acount?</span><span style={{color: '#1F7564', fontSize: 16, fontFamily: 'League Spartan', fontWeight: '700', textDecoration: 'underline', wordWrap: 'break-word'}}>  Sign up for SafePlace Vietnam </span></a>
 

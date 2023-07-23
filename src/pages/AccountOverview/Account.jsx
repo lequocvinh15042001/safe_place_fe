@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Account = () => {
   return (
@@ -89,7 +90,9 @@ export const Account = () => {
   <button className="Group485" type="submit" style={{cursor:"pointer",border:"none",width: 331, height: 32, left: 276, top: 1022, position: 'absolute',  background: 'white', boxShadow: '0px 0px 2px rgba(26, 26, 26, 0.20)', borderRadius: 5}}>
     {/* <div className="Rectangle2070" style={{width: 331, height: 32, left: 0, top: 0, position: 'absolute', background: 'white', boxShadow: '0px 0px 2px rgba(26, 26, 26, 0.20)', borderRadius: 5}} /> */}
 
-    <div className="LogOut" style={{width: 250.09, left: 40.46, top: 9, position: 'absolute', textAlign: 'center', color: '#1F7564', fontSize: 14, fontFamily: 'League Spartan', fontWeight: '400', wordWrap: 'break-word'}}>Log out</div>
+    <Link to={"/login"}>
+      <div className="LogOut" style={{width: 250.09, left: 40.46, top: 9, position: 'absolute', textAlign: 'center', color: '#1F7564', fontSize: 14, fontFamily: 'League Spartan', fontWeight: '400', wordWrap: 'break-word'}}>Log out</div>
+    </Link>
   </button>
 </div>
   );

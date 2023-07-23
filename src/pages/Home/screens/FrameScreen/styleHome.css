@@ -193,7 +193,7 @@
     width: 35px;
   }
   
-  .frame-screen .rectangle-2 {
+  .frame-screen .rectangle-2home {
     background-color: #d9d9d9;
     height: 4px;
     left: 41px;
@@ -354,7 +354,7 @@
     font-family: "League Spartan", Helvetica;
     font-size: 18px;
     font-weight: 700;
-    left: 241px;
+    left: 190px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
@@ -392,7 +392,7 @@
     font-family: "Signika", Helvetica;
     font-size: 18px;
     font-weight: 700;
-    left: 240px;
+    left: 220px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
@@ -506,6 +506,16 @@
     top: 8px;
     width: 90px;
   }
+
+  .frame-screen .rectangle-v {
+    background-color: #fdfdfd;
+    border-radius: 17px;
+    height: 26px;
+    left: 665px;
+    position: absolute;
+    top: 8px;
+    width: 140px;
+  }
   
   .frame-screen .text-wrapper-12 {
     color: #d8508e;
@@ -513,6 +523,19 @@
     font-size: 12px;
     font-weight: 700;
     left: 833px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 15px;
+    white-space: nowrap;
+  }
+
+  .frame-screen .text-wrapper-v {
+    color: #d8508e;
+    font-family: "League Spartan", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    left: 680px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;

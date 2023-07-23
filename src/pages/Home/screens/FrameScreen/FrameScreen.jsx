@@ -1,8 +1,8 @@
-import "./style.css";
+import "./styleHome.css";
 
-import { Component } from "../../components/Component";
-import { ComponentWrapper } from "../../components/ComponentWrapper";
-import { FrameHome } from "../../components/Frame";
+import { ComponentHome } from "../../componentsHome/ComponentHome";
+import { ComponentWrapper } from "../../componentsHome/ComponentWrapper";
+// import { FrameHome } from "../../components/Frame";
 import {Link} from "react-router-dom"
 import React from "react";
 
@@ -58,7 +58,7 @@ export const Home = () => {
           <div className="overlap-2">
             <div className="text-wrapper-4">00:00</div>
             <div className="text-wrapper-5">22:10</div>
-            <div className="rectangle-2" />
+            <div className="rectangle-2home" />
             <div className="ellipse" />
           </div>
           <img
@@ -109,18 +109,22 @@ export const Home = () => {
             <div className="text-wrapper-9">Recently Posted</div>
             <a href="#" className="text-wrapper-10">Show all</a>
             <a href="#" className="text-wrapper-11">Show all</a>
-            <Component className="component-1" />
-            <Component className="component-instance" />
-            <Component className="design-component-instance-node" groupClassName="component-1-instance" />
-            <Component className="component-2" />
-            <Component className="component-3" groupClassName="component-4" />
-            <Component className="component-5" />
-            <Component className="component-6" />
-            <Component className="component-7" />
-            <Component className="component-8" groupClassName="component-1-instance" />
-            <Component className="component-9" />
+            <ComponentHome className="component-1" />
+            <ComponentHome className="component-instance" />
+            <ComponentHome className="design-component-instance-node" groupClassName="component-1-instance" />
+            <ComponentHome className="component-2" />
+            <ComponentHome className="component-3" groupClassName="component-4" />
+            <ComponentHome className="component-5" />
+            <ComponentHome className="component-6" />
+            <ComponentHome className="component-7" />
+            <ComponentHome className="component-8" groupClassName="component-1-instance" />
+            <ComponentHome className="component-9" />
             <div className="rectangle-5" />
             <div className="text-wrapper-12">Install App</div>
+            <Link to={"/counselling"}>
+              <div className="rectangle-v" />
+              <div className="text-wrapper-v">Counselling Room</div>
+            </Link>
             <div className="group-6">
               <div className="overlap-6">
                 <p className="lorem-ipsum-is">
@@ -197,11 +201,13 @@ export const Home = () => {
                 </div>
               </div>
             </div>
+            <Link to={"/account"}>
             <img
               className="ellipse-2"
               alt="Ellipse"
               src="https://generation-sessions.s3.amazonaws.com/00a1d99e487596f2ee1ddca7390232ca/img/ellipse-6.svg"
             />
+            </Link>
             <div className="text-wrapper-22">Vietnam (English)</div>
           </div>
           {/* <Frame className="frame-instance" /> */}
