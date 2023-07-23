@@ -7,7 +7,7 @@ import "./style.css";
 
 import React from "react";
 
-export const Frame = ({ className }) => {
+export const FrameHome = ({ className }) => {
   return (
     <div className={`frame ${className}`}>
       <div className="overlap-group-wrapper">
