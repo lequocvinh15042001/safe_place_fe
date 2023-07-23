@@ -69,7 +69,7 @@ export const Courses = () => {
           />
         </div>
         <div className="overlap-3">
-          <div className="rectangle-2" />
+          <div className="rectangle-2course" />
           <div className="rectangle-3" />
           <input style={{border: "none"}} className="rectangle-4" placeholder="Do you have anything you want to share?"/>
           {/* <p className="p">Do you have anything you want to share?</p> */}
@@ -189,11 +189,14 @@ export const Courses = () => {
           <div className="text-wrapper-21">Show all</div>
           <div className="rectangle-11" />
           <div className="text-wrapper-22">Install App</div>
-          <img
-            className="ellipse-2"
-            alt="Ellipse"
-            src="https://generation-sessions.s3.amazonaws.com/1db8d0c9f6aaa02a2135b8344a5b0122/img/ellipse-6.svg"
-          />
+          <Link to={"/account"}>
+            <img
+              className="ellipse-2"
+              alt="Ellipse"
+              src="https://generation-sessions.s3.amazonaws.com/1db8d0c9f6aaa02a2135b8344a5b0122/img/ellipse-6.svg"
+            />
+          </Link>
+
           <div className="text-wrapper-23">Vietnam (English)</div>
           <div className="speaker-s-name-2">Speaker&#39;s name</div>
           <div className="speaker-s-name-3">Speaker&#39;s name</div>

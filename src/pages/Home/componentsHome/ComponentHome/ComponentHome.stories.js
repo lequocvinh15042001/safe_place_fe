@@ -1,8 +1,8 @@
-import { Component } from ".";
+import { ComponentHome } from ".";
 
 export default {
-  title: "Components/Component",
-  component: Component,
+  title: "ComponentsHome/ComponentHome",
+  component: ComponentHome,
 };
 
 export const Default = {

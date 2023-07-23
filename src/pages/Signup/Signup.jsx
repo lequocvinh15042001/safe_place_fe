@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export const Signup = () => {
@@ -29,9 +30,11 @@ export const Signup = () => {
   <input placeholder="Enter A Profile Name" className="Rectangle2079" style={{fontSize: 16, fontFamily: 'League Spartan', fontWeight: '500', wordWrap: 'break-word',width: 405, height: 63, left: "50%", top: 657, position: 'absolute', borderRadius: 2, border: '0.50px #1F7564 solid'}} />
   <input placeholder="Create A Password" className="Rectangle2075" style={{fontSize: 16, fontFamily: 'League Spartan', fontWeight: '500', wordWrap: 'break-word',width: 405, height: 64, left: "50%", top: 537, position: 'absolute', borderRadius: 2, border: '0.50px #1F7564 solid'}} />
 
-  <button className="Rectangle2076" style={{cursor:"pointer",background:"none",width: 212, height: 63, left: "60%", top: 890, position: 'absolute', borderRadius: 34, border: '0.50px #1F7564 solid'}}>
-    <span className="SignUp" style={{color: '#1F7564', fontSize: 24, fontFamily: 'League Spartan', fontWeight: '700', wordWrap: 'break-word'}}>Sign Up</span>
-  </button>
+  <Link to={"/login"}>
+    <button className="Rectangle2076" style={{cursor:"pointer",background:"none",width: 212, height: 63, left: "60%", top: 890, position: 'absolute', borderRadius: 34, border: '0.50px #1F7564 solid'}}>
+      <span className="SignUp" style={{color: '#1F7564', fontSize: 24, fontFamily: 'League Spartan', fontWeight: '700', wordWrap: 'break-word'}}>Sign Up</span>
+    </button>
+  </Link>
 
   <a href="#" className="Group450" style={{width: 29.68, height: 27.56, left: "88%", top: 552, position: 'absolute'}}>
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">

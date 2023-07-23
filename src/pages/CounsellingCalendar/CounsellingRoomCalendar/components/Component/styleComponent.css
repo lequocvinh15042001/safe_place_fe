@@ -1,0 +1,90 @@
+.component {
+  height: 50px;
+  position: relative;
+  width: 675px;
+}
+
+.component .speaker-s-name {
+  color: #1a1a1a80;
+  font-family: "League Spartan", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 85px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 27px;
+  white-space: nowrap;
+  width: 100px;
+}
+
+.component .element {
+  color: #1a1a1a80;
+  font-family: "League Spartan", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 635px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 22px;
+  white-space: nowrap;
+  width: 40px;
+}
+
+.component .mar {
+  color: #1a1a1a80;
+  font-family: "League Spartan", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 431px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 20px;
+  white-space: nowrap;
+  width: 76px;
+}
+
+.component .text-wrapper {
+  color: #1a1a1a80;
+  font-family: "League Spartan", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 20px;
+  white-space: nowrap;
+}
+
+.component .podcast-name {
+  color: #1a1a1a;
+  font-family: "League Spartan", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 83px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 4px;
+  white-space: nowrap;
+  width: 140px;
+}
+
+.component .group {
+  background-color: #d8508e;
+  background-image: url(../../../static/img/logo-icon-trans-1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  height: 50px;
+  left: 19px;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
